@@ -1,44 +1,46 @@
 import React from 'react'
 import Cars from '../NavBarContent/Cars';
 import AboutUs from '../NavBarContent/AboutUs';
+import EScooters from '../NavBarContent/EScooters';
+import Stations from '../NavBarContent/Stations';
 
 export default function NavBar() {
   const [isCarsClicked, setCarsIsClicked] = React.useState(false);
-  const [isEcootersClicked, setEcootersIsClicked] = React.useState(false);
+  const [isEScootersClicked, setEScootersIsClicked] = React.useState(false);
   const [isLocationsClicked, setLocationsyIsClicked] = React.useState(false);
   const [isAboutUsClicked, setAboutUsIsClicked] = React.useState(false);
 
   const handleCarsClick = () => {
     setCarsIsClicked(!isCarsClicked);
-    setEcootersIsClicked(false);
+    setEScootersIsClicked(false);
     setLocationsyIsClicked(false);
     setAboutUsIsClicked(false);
   }
 
-  const handleEcootersClick = () => {
+  const handleEScootersClick = () => {
     setCarsIsClicked(false);
-    setEcootersIsClicked(!isEcootersClicked);
+    setEScootersIsClicked(!isEScootersClicked);
     setLocationsyIsClicked(false);
     setAboutUsIsClicked(false);
   }
 
   const handleLocationsClick = () => {
     setCarsIsClicked(false);
-    setEcootersIsClicked(false);
+    setEScootersIsClicked(false);
     setLocationsyIsClicked(!isLocationsClicked);
     setAboutUsIsClicked(false);
   }
 
   const handleAboutUsClick = () => {
     setCarsIsClicked(false);
-    setEcootersIsClicked(false);
+    setEScootersIsClicked(false);
     setLocationsyIsClicked(false);
     setAboutUsIsClicked(!isAboutUsClicked);
   }
 
   return (
     <div class='flex flex-col bg-white'>
-      <div class='flex flex-1 h-11 justify-around px-10 py-2 bg-white text-zinc-800'>
+      <div class='flex flex-1 px-56 h-11 justify-around py-2 bg-white text-zinc-800'>
         <img
           class='hover:cursor-pointer'
           src='https://vinfastauto.com/themes/porto/img/new-home-page/VinFast-logo.svg'
@@ -54,12 +56,16 @@ export default function NavBar() {
           class='text-black font-alata
         hover:bg-zinc-100 cursor-pointer 
         px-2 py-1 rounded-full
-        transition-colors duration-300 ease-in-out'>E-Scooters</h1>
+        transition-colors duration-300 ease-in-out'
+          onClick={handleEScootersClick}
+        >E-Scooters</h1>
         <h1
           class='text-black font-alata
         hover:bg-zinc-100 cursor-pointer 
         px-2 py-1 rounded-full
-        transition-colors duration-300 ease-in-out'>Battery & Charging stations</h1>
+        transition-colors duration-300 ease-in-out'
+          onClick={handleLocationsClick}
+        >Battery & Charging stations</h1>
         <h1
           class='text-black font-alata
         hover:bg-zinc-100 cursor-pointer 
@@ -70,13 +76,13 @@ export default function NavBar() {
       </div>
       {(isCarsClicked) && (
         <Cars />
-      ) || (isEcootersClicked) && (
+      ) || (isEScootersClicked) && (
         <div>
-          Ecooters
+          <EScooters />
         </div>
       ) || (isLocationsClicked) && (
         <div>
-          Locations
+          <Stations />
         </div>
       ) || (isAboutUsClicked) && (
         <AboutUs />

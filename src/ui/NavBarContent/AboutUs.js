@@ -45,6 +45,13 @@ export default function AboutUs() {
                     </p>
                 </div>
             </div>
+            <a className='flex justify-end mt-4' href='https://vinfastauto.com/vn_vi/ve-chung-toi'>
+                <button
+                    className='bg-zinc-800 text-white font-alata
+                    px-4 py-1 rounded-full hover:bg-zinc-700'>
+                    Learn more
+                </button>
+            </a>
         </div>
     )
 }
