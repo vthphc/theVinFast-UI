@@ -1,5 +1,6 @@
 import React from 'react'
-import SlideInSection from '../SlideInEffect'
+import "animate.css/animate.compat.css"
+import ScrollAnimation from 'react-animate-on-scroll'
 
 export default function Latest2() {
     return (
@@ -14,7 +15,7 @@ export default function Latest2() {
                 className='text-zinc-600 font-bold text-4xl font-montserrat
                 absolute inset-0 flex justify-end mr-6 mt-4'>Vinfast VF6 - the superior performance.</h1>
             <div className='absolute inset-0 flex justify-end items-end mb-10 mr-6'>
-                <SlideInSection>
+                <ScrollAnimation animateIn='fadeInRight' animateOut='fadeOutRight'>
                     <button
                         className='h-14 py-3 px-6 mr-4 rounded-3xl bg-zinc-700 
                 text-white text-xl font-alata
@@ -29,7 +30,7 @@ export default function Latest2() {
                 transition-colors duration-300 ease-in-out'>
                         Order Now
                     </button>
-                </SlideInSection>
+                </ScrollAnimation>
             </div>
         </div>
     )
