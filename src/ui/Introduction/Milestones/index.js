@@ -10,7 +10,7 @@ export default function Milestones() {
                 </h1>
             </div>
             <div className='relative flex flex-row space-x-8 mx-8'>
-                <ScrollAnimation className='flex flex-1' animateIn='zoomIn' animateOut='zoomOut'>
+                <ScrollAnimation className='flex flex-1' animateIn='fadeIn' animateOut='fadeOut'>
                     <div className='bg-white bg-opacity-80 p-4 rounded-md shadow-lg transform transition duration-300 ease-in-out hover:scale-110 hover:cursor-default flex-1'>
                         <h1 className='font-alata text-2xl text-zinc-800 mb-3'>PHASE 1: Foundation</h1>
                         <h1 className='font-alata text-lg font-bold text-sky-700'>2017</h1>
@@ -27,7 +27,7 @@ export default function Milestones() {
                         </p>
                     </div>
                 </ScrollAnimation>
-                <ScrollAnimation className='flex flex-1' animateIn='zoomIn' animateOut='zoomOut'>
+                <ScrollAnimation className='flex flex-1' animateIn='fadeIn' animateOut='fadeOut'>
                     <div className='bg-white bg-opacity-80 p-4 rounded-md shadow-lg transform transition duration-300 ease-in-out hover:scale-110 hover:cursor-default flex-1'>
                         <h1 className='font-alata text-2xl text-zinc-800 mb-3'>PHASE 2: Acceleration</h1>
                         <h1 className='font-alata text-lg font-bold text-sky-700'>2020</h1>
@@ -43,7 +43,7 @@ export default function Milestones() {
                         </p>
                     </div>
                 </ScrollAnimation>
-                <ScrollAnimation className='flex flex-1' animateIn='zoomIn' animateOut='zoomOut'>
+                <ScrollAnimation className='flex flex-1' animateIn='fadeIn' animateOut='fadeOut'>
                     <div className='bg-white bg-opacity-80 p-4 rounded-md shadow-lg transform transition duration-300 ease-in-out hover:scale-110 hover:cursor-default flex-1'>
                         <h1 className='font-alata text-2xl text-zinc-800 mb-3'>PHASE 3: Global Expansion</h1>
                         <h1 className='font-alata text-lg font-bold text-sky-700'>2022</h1>
@@ -55,7 +55,7 @@ export default function Milestones() {
                         </p>
                     </div>
                 </ScrollAnimation>
-                <ScrollAnimation className='flex flex-1' animateIn='zoomIn' animateOut='zoomOut'>
+                <ScrollAnimation className='flex flex-1' animateIn='fadeIn' animateOut='fadeOut'>
                     <div className='bg-white bg-opacity-80 p-4 rounded-md shadow-lg transform transition duraton-300 ease-in-out hover:scale-110 hover:cursor-default flex-1'>
                         <h1 className='font-alata text-2xl text-zinc-800 mb-3'>PHASE 4: Innovation</h1>
                         <h1 className='font-alata text-lg font-bold text-sky-700'>2023</h1>

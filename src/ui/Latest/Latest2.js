@@ -13,7 +13,7 @@ export default function Latest2() {
             </div>
             <h1
                 className='text-zinc-600 font-bold text-4xl font-montserrat
-                absolute inset-0 flex justify-end mr-6 mt-4'>Vinfast VF6 - the superior performance.</h1>
+                absolute inset-0 flex justify-end mr-6 mt-4'>VinFast VF6 - the superior performance.</h1>
             <div className='absolute inset-0 flex justify-end items-end mb-10 mr-6'>
                 <ScrollAnimation animateIn='fadeInRight' animateOut='fadeOutRight'>
                     <button

@@ -14,7 +14,7 @@ export default function Latest3() {
             </div>
             <h1
                 className='text-zinc-700 font-bold text-4xl font-montserrat
-                absolute inset-0 flex justify-end mr-6 mt-4'>Vinfast VF7 - asymmetric universe design.</h1>
+                absolute inset-0 flex justify-end mr-6 mt-4'>VinFast VF7 - asymmetric universe design.</h1>
             <div className='absolute inset-0 flex justify-end items-end mb-10 mr-6'>
                 <ScrollAnimation animateIn='fadeInRight' animateOut='fadeOutRight'>
                     <button
