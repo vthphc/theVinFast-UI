@@ -12,7 +12,7 @@ export default function AboutVinFast() {
         <div className='flex flex-1 relative flex-col items-center justify-center min-h-screen'>
             <div className='relative w-full h-full'>
                 <img className='w-full max-h-screen object-cover' src='https://static-images.vnncdn.net/files/publish/2023/5/26/vf-8-vf-9-281.jpg' alt='VinFast' />
-                <div className={`absolute transition-opacity duration-700 ease-in-out transform inset-0 flex flex-col items-center justify-center bg-black bg-opacity-35 ${loaded ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`} animateIn='fadeIn' animateOut='fadeOut'>
+                <div className={`absolute transition-opacity duration-700 ease-in-out transform inset-0 flex flex-col items-center justify-center bg-black bg-opacity-35 ${loaded ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
                     <h1 className='font-alata text-4xl font-bold text-white text-center'>THE GLOBAL INTELLIGENT</h1>
                     <h1 className='font-alata text-4xl font-bold text-white text-center'>MOBILITY COMPANY</h1>
                     <p className='font-alata max-w-6xl text-xl font-light text-white text-center'>
