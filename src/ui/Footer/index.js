@@ -1,13 +1,14 @@
 import React from 'react'
+import Info from '../Info'
 
 export default function Footer() {
     return (
-        <div className='flex flex-col p-4 mb-4'>
+        <div className='flex flex-col p-4'>
             <img
                 className='self-center pb-8 max-w-[400px] max-h-[180px] cursor-pointer'
                 src='https://vinfastauto.com/themes/porto/img/homepage-v2/logo-footer-v2.svg'
                 alt='logo' />
-            <div className='flex content-center text-zinc-500 font-alata px-80 justify-around'>
+            <div className='flex content-center text-zinc-500 mb-4 font-alata px-80 justify-around'>
                 <a
                     href='https://vinfastauto.com/vn_vi/ve-chung-toi'
                     className='hover:text-zinc-900 transition-colors duration-500'
@@ -32,6 +33,7 @@ export default function Footer() {
                     className='hover:text-zinc-900 transition-colors duration-500'
                 >Privacy</a>
             </div>
+            <Info />
         </div>
     )
 }

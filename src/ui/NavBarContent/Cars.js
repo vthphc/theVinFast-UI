@@ -26,7 +26,10 @@ export default function Cars() {
       setTimeout(() => setVisibility((prev) => ({ ...prev, vinfastVF9: true })), 800)
     ];
 
-    return () => timeouts.forEach(clearTimeout);
+    return () => {
+      timeouts.forEach(clearTimeout);
+      setLoaded(false);
+    };
   }, []);
 
   return (

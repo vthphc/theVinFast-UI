@@ -2,10 +2,12 @@ import React from 'react'
 
 export default function Info() {
     return (
-        <div className='flex flex-row justify-center mt-1 mb-2'>
-            <h1 className='mr-10'>vinfastauto.com - restyle by vthphc</h1>
-            <a href="https://github.com/vthphc/theVinFast-UI" target="_blank" rel="noopener noreferrer">
-                GitHub
+        <div className='flex flex-row justify-between mx-4'>
+            <p className=''>
+                ©2024 All rights reserved. VinFast Auto Ltd.
+            </p>
+            <a className='text-sky-700' href="https://github.com/vthphc/theVinFast-UI" target="_blank" rel="noopener noreferrer">
+                GitHub Repository
             </a>
         </div>
     )
